@@ -1,5 +1,71 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-color: var(--bg-color);
+  /*display: flex;*/
+  /*align-items: center;*/
+  /*justify-content: center;*/
+  color: var(--color);
+  font-family: var(--font-family), Arial, sans-serif;
+  font-size: var(--font-size);
+}
+
+.header {
+  position: relative;
+  block-size: 100vh;
+  background: var(--header__bg-image);
+  /*background-attachment: fixed;*/
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 319px 244px 205px;
+  object-position: center;
+  object-fit: cover;
+}
+
+.header__theme-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  background: none;
+  color: var(--header__theme-menu-color);
+  border: none;
+  text-transform: lowercase;
+  font-family: inherit;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 3px 13px;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--header__theme-menu-color);
+}
+
+.header__title {
+  color: var(--header__title-color);
+  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+  font-weight: 700;
+  line-height: 129.53px;
+}
+
+.header__description {
+  inline-size: 491px;
+  block-size: min-content;
+  justify-self: end;
+}
+
+.title-decor {
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.accent-description {
+  background-color: var(--accent-color);
+  font-weight: 700;
+  color: var(--accent-description-color);
 }
