@@ -1,8 +1,10 @@
 .page.theme_dark {
   --bg-color: #000028;
-  --header__bg-image: url('../images/cover-image-dark.png');
+  --bg-image: url('../images/cover-image-dark.png');
   --header__title-color: #db00ff;
-  --header__theme-menu-color: #ff0070;
+  --footer__title-color: #db00ff;
+  --accent-theme-color: #ff0070;
+  --accent-theme-ligth-color: #ff007066;
   --accent-color: #ff0070;
   --accent-text-color: #000028;
   --color: #f1b2ce;
