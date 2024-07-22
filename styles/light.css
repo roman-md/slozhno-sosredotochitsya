@@ -8,6 +8,7 @@
   --accent-color: #ff8dcb;
   --accent-text-color: #353430;
   --color: #353430;
+  --display-rec: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -21,5 +22,6 @@
     --accent-color: #ff8dcb;
     --accent-text-color: #353430;
     --color: #353430;
+    --display-rec: none;
   }
 }

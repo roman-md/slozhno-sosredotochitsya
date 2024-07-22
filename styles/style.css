@@ -1,3 +1,4 @@
+
 html {
   container-type: inline-size;
 }
@@ -48,7 +49,6 @@ a:focus-visible {
 }
 
 .header {
-  --header-padding: 20px;
   position: relative;
   block-size: 100vh;
   padding: var(--header-padding) 0;
@@ -64,7 +64,7 @@ a:focus-visible {
   }
 }
 
-.header:before {
+.decorated-zone:before {
   content: "";
   inline-size: 25px;
   block-size: 25px;
@@ -75,7 +75,7 @@ a:focus-visible {
   inset-inline-end: var(--header-padding);
 }
 
-.header:after {
+.decorated-zone:after {
   content: "";
   inline-size: 25px;
   block-size: 25px;
@@ -87,6 +87,7 @@ a:focus-visible {
 }
 
 .rec {
+  display: var(--display-rec, none);
   position: absolute;
   font-size: 18px;
   font-weight: 400;
@@ -94,10 +95,6 @@ a:focus-visible {
   inset-block-start: var(--header-padding);
   inset-inline-end: calc(var(--header-padding) + 10px);
   color: var(--accent-theme-color);
-}
-
-.page.theme_light .rec {
-  display: none;
 }
 
 .rec:after {
@@ -158,7 +155,7 @@ a:focus-visible {
 
 .header__theme-menu-button:hover {
   cursor: pointer;
-  border-color: var(--accent-theme-ligth-color);
+  border: 1px solid var(--accent-theme-ligth-color);
 }
 
 .header__theme-menu-button:focus {
@@ -175,6 +172,8 @@ a:focus-visible {
 
 .header__theme-menu-button_active:hover {
   cursor: default;
+  pointer-events: none;
+  border-color: inherit;
 }
 
 .header__title {
@@ -391,28 +390,6 @@ a:focus-visible {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.footer:before {
-  content: "";
-  inline-size: 25px;
-  block-size: 25px;
-  border-inline-end: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
-  position: absolute;
-  inset-block-start: var(--footer-padding);
-  inset-inline-end: var(--footer-padding);
-}
-
-.footer:after {
-  content: "";
-  inline-size: 25px;
-  block-size: 25px;
-  border-inline-start: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
-  position: absolute;
-  inset-block-end: var(--footer-padding);
-  inset-inline-start: var(--footer-padding);
 }
 
 @container (inline-size < 768px) {

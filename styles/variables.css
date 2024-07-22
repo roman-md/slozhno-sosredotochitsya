@@ -10,4 +10,6 @@
   --color: #f1b2ce;
   --font-family: 'IBM Plex mono';
   --font-size: 18px;
+  --display-rec: inline-block;
+  --header-padding: 20px;
 }
