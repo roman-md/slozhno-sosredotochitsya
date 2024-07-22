@@ -1,9 +1,9 @@
-
 html {
   container-type: inline-size;
 }
+
 .page {
-  background-color: var(--bg-color);
+  background-color: var(--bg-color), #000028;
   background: var(--bg-image) no-repeat center / cover;
   background-attachment: fixed;
   display: flex;
@@ -363,10 +363,6 @@ a:focus-visible {
 
 .block-big-row {
   grid-row: span 2;
-}
-
-.block-5 {
-  margin-top: 5px;
 }
 
 @container (inline-size < 768px) {
