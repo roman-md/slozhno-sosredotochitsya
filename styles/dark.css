@@ -9,3 +9,17 @@
   --accent-text-color: #000028;
   --color: #f1b2ce;
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #000028;
+    --bg-image: url('../images/cover-image-dark.png');
+    --header__title-color: #db00ff;
+    --footer__title-color: #db00ff;
+    --accent-theme-color: #ff0070;
+    --accent-theme-ligth-color: #ff007066;
+    --accent-color: #ff0070;
+    --accent-text-color: #000028;
+    --color: #f1b2ce;
+  }
+}
