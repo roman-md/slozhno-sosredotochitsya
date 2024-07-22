@@ -9,11 +9,8 @@ html {
   font-family: var(--font-family), Arial, sans-serif;
   font-size: var(--font-size);
   gap: 60px;
-  background-color: var(--bg-color), #000028;
-  background-image: var(--bg-image);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: var(--page-bg-image) no-repeat center / cover;
+  background-color: var(--page-bg-color, #000028);
   background-attachment: fixed;
 }
 

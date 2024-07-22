@@ -1,6 +1,6 @@
 .page.theme_light {
-  --bg-color: #fff1f7;
-  --bg-image: url('../images/cover-image-light.png');
+  --page-bg-color: #fff1f7;
+  --page-bg-image: url('../images/cover-image-light.png');
   --header__title-color: #ffc2e6;
   --footer__title-color: #ffc2e6;
   --accent-theme-color: #353430;
@@ -13,7 +13,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --bg-color: #fff1f7;
+    --aaa: #fff1f7;
     --bg-image: url('../images/cover-image-light.png');
     --header__title-color: #ffc2e6;
     --footer__title-color: #ffc2e6;

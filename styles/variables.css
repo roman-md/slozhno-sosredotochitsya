@@ -1,6 +1,6 @@
 :root {
-  --bg-color: #000028;
-  --bg-image: url('../images/cover-image-dark.png');
+  --page-bg-color: #fff1f7;
+  --page-bg-image: url('../images/cover-image-dark.png');
   --header__title-color: #db00ff;
   --footer__title-color: #db00ff;
   --accent-theme-color: #ff0070;
