@@ -3,8 +3,8 @@ html {
 }
 
 .page {
-  background-color: var(--bg-color), #000028;
   background: var(--bg-image) no-repeat center / cover;
+  background-color: var(--bg-color), #000028;
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
@@ -50,7 +50,7 @@ a:focus-visible {
 
 .header {
   position: relative;
-  block-size: 100vh;
+  min-block-size: 100vh;
   padding: var(--header-padding) 0;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
@@ -386,7 +386,7 @@ a:focus-visible {
 .footer {
   --footer-padding: 20px;
   position: relative;
-  block-size: 100vh;
+  min-block-size: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
