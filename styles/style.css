@@ -1,16 +1,16 @@
 html {
   container-type: inline-size;
+  background-color: var(--page-bg-color, #000028);
 }
 
 .page {
   display: flex;
   flex-direction: column;
   color: var(--color);
-  font-family: var(--font-family), Arial, sans-serif;
+  font-family: var(--font-family), monospace;
   font-size: var(--font-size);
   gap: 60px;
   background: var(--page-bg-image) no-repeat center / cover;
-  background-color: var(--page-bg-color, #000028);
   background-attachment: fixed;
 }
 
@@ -30,27 +30,10 @@ html {
   color: var(--accent-text-color);
 }
 
-a {
-  text-shadow: 2px 2px 0 var(--accent-color);
-  text-decoration: none;
-}
-
-a:hover {
-  border-block-end: 2px solid var(--color);
-  cursor: pointer;
-}
-
-a:focus {
-  outline: none;
-}
-
-a:focus-visible {
-  border: 1px solid var(--color);
-}
-
 .header {
   position: relative;
-  min-block-size: 100vh;
+  block-size: 100vh;
+  min-block-size: 668px;
   padding: var(--header-padding) 0;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
@@ -92,6 +75,7 @@ a:focus-visible {
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
+  text-transform: uppercase;
   inset-block-start: var(--header-padding);
   inset-inline-end: calc(var(--header-padding) + 10px);
   color: var(--accent-theme-color);
@@ -306,6 +290,13 @@ a:focus-visible {
   }
 }
 
+.section__list-items {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  inline-size: 100%;
+}
+
 .section__list-picture {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -350,6 +341,24 @@ a:focus-visible {
   line-height: 23.4px;
 }
 
+.text-link {
+  text-shadow: 2px 2px 0 var(--accent-color);
+  text-decoration: none;
+}
+
+.text-link:hover {
+  border-block-end: 1px solid var(--color);
+  cursor: pointer;
+}
+
+.text-link:focus {
+  outline: none;
+}
+
+.text-link:focus-visible {
+  border: 1px solid var(--color);
+}
+
 .section__list-item-picture img {
   object-position: center;
   object-fit: cover;
@@ -384,9 +393,9 @@ a:focus-visible {
 }
 
 .footer {
-  --footer-padding: 20px;
   position: relative;
-  min-block-size: 100vh;
+  block-size: 100vh;
+  min-block-size: 668px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -394,7 +403,7 @@ a:focus-visible {
 
 @container (inline-size < 768px) {
   .footer {
-    --footer-padding: 10px;
+    --header-padding: 10px;
   }
 }
 
@@ -403,6 +412,10 @@ a:focus-visible {
   font-size: 157px;
   font-weight: 700;
   line-height: 129.53px;
+}
+
+.footer__title.title-decor {
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 @container (inline-size <= 1024px) {

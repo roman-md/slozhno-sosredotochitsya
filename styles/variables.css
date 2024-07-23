@@ -13,3 +13,11 @@
   --display-rec: inline-block;
   --header-padding: 20px;
 }
+
+html:has(.theme_dark) {
+  --page-bg-color: #000028;
+}
+
+html:has(.theme_light) {
+  --page-bg-color: #fff1f7;
+}
