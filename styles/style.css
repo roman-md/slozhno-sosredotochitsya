@@ -1,7 +1,7 @@
 html {
   container-type: inline-size;
-  background-color: var(--page-bg-color, #000028);
   background: var(--page-bg-image) no-repeat center / cover;
+  background-color: var(--page-bg-color, #000028);
   background-attachment: fixed;
 }
 
