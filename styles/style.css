@@ -1,6 +1,8 @@
 html {
   container-type: inline-size;
   background-color: var(--page-bg-color, #000028);
+  background: var(--page-bg-image) no-repeat center / cover;
+  background-attachment: fixed;
 }
 
 .page {
@@ -10,8 +12,6 @@ html {
   font-family: var(--font-family), monospace;
   font-size: var(--font-size);
   gap: 60px;
-  background: var(--page-bg-image) no-repeat center / cover;
-  background-attachment: fixed;
 }
 
 @container (inline-size < 768px) {
